@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+
+$mont :  'Montserrat', sans-serif;
+$carter :  'Carter One', cursive;
+$troska : 'Cinzel', serif;
+
+body,html
+{
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+    padding : 0 ;
+    margin : 0 ;
+    font-family: $mont;
+}
+
+header
+{
+    height: 100vh;
+    background-image: url(trosk-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+}
+
+.toggler
+{
+    padding: 1em;
+    display: block;
+    
+    i
+    {
+        float: right;
+        font-size: 1.4em;
+        color: azure;
+        cursor: pointer;
+    }
+
+    figcaption
+    {
+        font-size: 1.3em;
+        text-align: center;
+        a
+        {
+            text-decoration: none;
+            color : whitesmoke;
+        }
+    }
+}
+/*ul*/
+
+
+nav ul
+{
+    height: 100%;
+    width: 0%;
+    background: black;
+    z-index: 1000;
+    top: 0;
+    
+    position: absolute;
+    transition: 0.5s;
+    
+    
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+nav ul li 
+{
+    margin: 35px ;
+    padding: 1.2em 1.4em;
+    text-align: center;
+}
+
+ nav ul li:nth-of-type(1)
+{
+    margin-top: 80px;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color : whitesmoke;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+}
+
+.close-btn
+{
+    color : darkgray;
+    float: left;
+    padding: 1.2em;
+    font-size: 1.3em;   
+    display: block;
+    box-sizing: border-box;
+      
+    i
+    {
+        cursor : pointer;
+    }
+}
+
+.marca
+{
+    bottom: 0;
+    position: absolute;
+    display: block;
+    margin: 55px auto;
+   
+    width: 100%;
+    
+
+}
+
+.marca figcaption
+{
+    color: whitesmoke;
+    bottom: 0;
+    text-align: center;
+    padding: 1.4em 1.7em;
+    font-size: 1.7em;
+    font-family: $troska;
+    text-decoration: underline  whitesmoke ;
+}
+
+
+/*section*/
+
+section
+{
+    height: 100vh;
+    background: whitesmoke;
+
+    &:nth-of-type(1)
+    {
+        background-image: url(section1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    &:nth-of-type(2)
+    {
+        background-image: url(section2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    &:nth-of-type(3)
+    {
+        background-image: url(section3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+}
+
+/*footer*/
+footer
+{
+    padding: 1em;
+    height: calc(70vh - 2em);
+    background: white;
+    display: block;
+
+    .tittle-footer
+    {
+        display: block;
+        padding: 1em;
+
+        h3 
+        {
+            margin: 60px auto;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .redes
+    {
+        display: block;
+        padding: 1em;
+        height: calc(40vh - 2em);
+        margin: 100px auto;
+        ul 
+        {
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+            list-style-type: none;
+
+            li
+            {
+                float: left;
+                margin: 5px auto;
+                padding: 15px 5px;
+
+                a
+                {
+                    text-decoration: none;
+                    display: block;
+                    color: black;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+
+    }
+}

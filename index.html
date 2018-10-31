@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TOSKA</title>
+    <link rel="stylesheet" href="./main/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    
+    <header>
+        <nav id="nav">
+            <!--toglger bar-->
+            <div class="toggler">
+              <i class="fas fa-bars" id="icon-bar" onclick="openNav()"></i>
+              <figcaption><a href="#" >TROSKA</a></figcaption>
+            </div>
+            <ul id="ul">
+                <!--btn close nav-->
+                <div class="close-btn" onclick="closeNav()">
+                    <i class="fas fa-times"></i>
+                </div>
+               <!--nav items-->
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">mujer</a></li>
+                <li><a href="#">niño</a></li>
+               <!--marca-->
+                <div class="marca">
+                    <figcaption>troska</figcaption>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="hombre">
+    </section>
+    <section class="mujer">
+    </section>
+    <section class="ninos">
+    </section>
+    <footer>
+        <div>
+            <div class="tittle-footer">
+                <h3>Siguenos en nuestras redes</h3>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li><a href="#">intagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+    
+    $(document).ready(function(){
+        $('.hombre').click(function(){
+            window.location.href = 'hombre.html'
+        });
+
+        $('.mujer').click(function(){
+            window.location.href = 'mujer.html'
+        });
+
+        $('.ninos').click(function(){
+            window.location.href = 'ninos.html'
+        });
+
+
+    });
+    
+    </script>
+  
+    <!--open and close btn navBar-->
+    <script>
+    function openNav(){
+        document.getElementById('ul').style.width = "60%";
+    }
+    
+    function closeNav(){
+        document.getElementById('ul').style.width = "0%";
+    }
+    </script>
+
+</body>
+</html>
